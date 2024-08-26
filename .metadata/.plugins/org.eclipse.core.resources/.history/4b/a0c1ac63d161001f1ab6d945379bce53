@@ -1,0 +1,8 @@
+Feature: Manipulação de Progressão
+
+  Scenario: Interagir com a progress bar
+    Given que eu acesse a URL de validar o Progress"https://demoqa.com/"
+    And escolho a opção "Progress"
+    When clico no botão "Start Progress" e paro antes dos 50%
+    And valido que o valor da progress bar é menor ou igual a 50%
+    Then clico no botão "Reset Progress" novamente e ao chegar aos 100% reseto a progress bar

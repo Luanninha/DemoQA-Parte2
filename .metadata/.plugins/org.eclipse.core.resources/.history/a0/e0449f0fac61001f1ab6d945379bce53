@@ -1,0 +1,75 @@
+package Elementos;
+
+public class Elementos {
+
+}
+
+
+
+acessar o site https://demoqa.com/
+
+escolher a opçãp forms na pagina inicial
+
+clicar no submenu practice form
+preencher todo o formulário com valores aleatórios
+
+o arquivo utilizado para upload precisa ser um txt qualquer e precisa estar na devida pasta do GitHub ao ser publicado o projeto
+
+submeter o formulário
+
+garantir que um popup foi aberto após o submit 
+fechar o popup
+
+resumo
+
+ acessar o site https://demoqa.com/
+
+escolher a opção alerts, frame e windowws na pagina inicial
+
+clicar no submenu browser wuindowns
+
+clicar no botão new Windows
+
+certifica se que uma nova janela foi aberta, e validar a msg "this is a sample page
+
+fecgar a nova janela aberta
+
+
+resumo acessar o site
+
+escolher a opção elements na pagina inicial 
+
+clicar no sbmenu web tables
+
+criar um novo registro
+
+editar o novo registro criado
+
+bônus (pontos adicionasi na valiaçai)
+
+criar 12 novos registros de forma dinâmica através do cucmber
+
+acessar o site 
+
+escolher a opção widgets na pagina inicial
+
+clicar no submenu progress bar
+
+clicar no botão star
+
+parar antes dos 25%
+
+validar que o valor da progress bar e menor ou igual aos 25%
+
+aperatr start novamente e ao chegar aos 100% resetar a progress bar
+
+acessar o site 
+
+escolher a opção interactions na pasina inicial
+
+clicar no submenu Sortable
+
+utilizando métodos de drag and drop colocar os elementos na ordem crescente
+
+
+

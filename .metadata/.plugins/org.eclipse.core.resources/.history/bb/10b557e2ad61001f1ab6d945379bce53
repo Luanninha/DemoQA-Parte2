@@ -1,0 +1,27 @@
+
+@tag
+Feature: Validar o Progress
+  @tag1
+  Scenario: Title of your scenario
+    Given   acessar o site 
+    And escolher a opção widgets na pagina inicial
+    When clicar no submenu progress bar
+    And clicar no botão star e parar antes dos 25%
+    And validar que o valor da progress bar e menor ou igual aos 25%
+    Then aperatr start novamente e ao chegar aos 100% resetar a progress bar
+    And fechar navegador
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

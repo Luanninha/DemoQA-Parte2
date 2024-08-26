@@ -1,0 +1,65 @@
+package Steps;
+
+import Elementos.ElementosCriarRegistro;
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsCriarRegistro {
+
+	private Metodos m = new Metodos();
+	private ElementosCriarRegistro e = new ElementosCriarRegistro();
+	
+
+	@Given("Given que eu acesse a URL de criação de registro  {string}")
+	public void given_que_eu_acesse_a_url_de_criação_de_registro(String string) {
+		m.AbrirNavegador(string);
+	}
+
+	@Given("escolho a opção {string}")
+	public void escolho_a_opção(String string) {
+		m.rolarAteElemento(e.getCampoElements());
+		m.clicar(e.getCampoElements());
+	}
+
+	@When("clico no submenu do {string}")
+	public void clico_no_submenu_do(String string) {
+		m.aguardarElementoClicavel(e.getSubmenuWebTables(), 2000);
+		m.clicar(e.getSubmenuWebTables());
+	}
+
+	@When("crio um novo registro")
+	public void crio_um_novo_registro() {
+		m.clicar(e.getNovoRegistroAdd());
+		m.preencher(e.getFirstName(), "");
+		m.preencher(e.getLastName(), null);
+		m.preencher(e.getEmail(), null);
+		m.preencher(e.getAge(), null);
+		m.preencher(e.getSalary(), null);
+		m.preencher(e.getDepartment(), null);
+		m.clicar(e.getSubmitRegistro());
+
+	}
+
+	@When("edito o novo registro criado")
+	public void edito_o_novo_registro_criado() {
+
+	}
+
+	@Then("verifico que o registro foi atualizado corretamente")
+	public void verifico_que_o_registro_foi_atualizado_corretamente() {
+
+	}
+
+	@When("crio um novo registro com nome {string}, idade {string}, e email {string}")
+	public void crio_um_novo_registro_com_nome_idade_e_email(String string, String string2, String string3) {
+
+	}
+
+	@Then("verifico que o registro foi criado corretamente")
+	public void verifico_que_o_registro_foi_criado_corretamente() {
+
+	}
+
+}

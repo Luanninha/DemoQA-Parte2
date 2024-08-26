@@ -1,0 +1,191 @@
+package Elementos;
+
+import org.openqa.selenium.By;
+
+public class Elementos {
+
+	// Criar registro
+	private By campoElements = By
+			.cssSelector("#app > div > div > div > div:nth-child(1) > div > div > div:nth-child(1) > span > div");
+	private By submenuWebTables = By.cssSelector("#item-3 > span");
+	private By novoRegistroAdd = By.id("addNewRecordButton");
+	private By FirstName = By.id("firstName");
+	private By LastName = By.id("lastName");
+	private By Email = By.id("userEmail");
+	private By Age = By.id("age");	
+	private By salary = By.id("salary");
+	private By department = By.id("department");
+	private By submitRegistro = By.cssSelector("#submit");
+
+	// ElementosOrdemCrescente
+	private By campoInteractions = By.cssSelector(
+			"#app > div > div > div > div:nth-child(1) > div > div > div:nth-child(5) > span > div > div.header-text");
+	private By submenuSortable = By.cssSelector("#item-0 > span");
+	private By list = By.id("demo-tab-list");
+	private By grid = By.cssSelector("#demo-tab-grid");
+	private By metodosordemcrescente = By.cssSelector(null);
+
+	// Formulário de Cadastro
+	private By opcaoForms = By.cssSelector(":nth-child(2) > :nth-child(1) > .card-body");
+	private By submenuPracticeForm = By.cssSelector(":nth-child(2) > .element-list > .menu-list > #item-0");
+	private By campoFirstName = By.id("firstName");
+	private By campoLastName = By.id("lastName");
+	private By campoUserEmail = By.id("userEmail");
+	private By opcaoGen = By.cssSelector("#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label");
+	private By campoUserNumber = By.id("userNumber");
+	private By campoDateOfBirthInput = By.id("dateOfBirthInput");
+	private By selecaoMes = By.cssSelector(".react-datepicker__month-select");
+	private By selecaoAno = By.cssSelector(".react-datepicker__year-select");
+	private By selecaoDia = By.cssSelector(".react-datepicker__day--001");
+	private By campoSubjects = By.cssSelector(".subjects-auto-complete__value-container");
+	private By opcaoSports = By.cssSelector(".custom-control-label");
+	private By campoUploadPicture = By.id("uploadPicture");
+	private By campoCurrentAddress = By.id("currentAddress");
+	private By selecaoEstado = By.id("state");
+	private By selecaoCidade = By.id("city");
+	private By botaoSubmit = By.id("submit");
+	private By botaoFecharPopup = By.id("closeLargeModal");
+
+//Validar mensagem 
+	private By campoAlertFrameWindow = By
+			.cssSelector("#app > div > div > div.home-body > div > div:nth-child(3) > div > div.card-body > h5");
+	private By submenuBrowserWindow = By.cssSelector("#item-0 > span");
+	private By botaoNewWindow = By.id("windowButton");
+	private By mensagemThisisasamplepage = By.id("sampleHeading");
+
+//Validar progress
+	private By campoWidget = By.cssSelector(
+			"#app > div > div > div.home-body > div > div:nth-child(4) > div > div.avatar.mx-auto.white > svg > path");
+	private By campoProgressBar = By.cssSelector("#item-4 > span");
+	private By btStart = By.cssSelector("#startStopButton");
+	private By ProgressBar = By.id("progressBar");
+	
+	//Getters
+	public By getCampoElements() {
+		return campoElements;
+	}
+	public By getSubmenuWebTables() {
+		return submenuWebTables;
+	}
+	public By getNovoRegistroAdd() {
+		return novoRegistroAdd;
+	}
+	public By getFirstName() {
+		return FirstName;
+	}
+	public By getLastName() {
+		return LastName;
+	}
+	public By getEmail() {
+		return Email;
+	}
+	public By getAge() {
+		return Age;
+	}
+	public By getSalary() {
+		return salary;
+	}
+	public By getDepartment() {
+		return department;
+	}
+	public By getSubmitRegistro() {
+		return submitRegistro;
+	}
+	public By getCampoInteractions() {
+		return campoInteractions;
+	}
+	public By getSubmenuSortable() {
+		return submenuSortable;
+	}
+	public By getList() {
+		return list;
+	}
+	public By getGrid() {
+		return grid;
+	}
+	public By getMetodosordemcrescente() {
+		return metodosordemcrescente;
+	}
+	public By getOpcaoForms() {
+		return opcaoForms;
+	}
+	public By getSubmenuPracticeForm() {
+		return submenuPracticeForm;
+	}
+	public By getCampoFirstName() {
+		return campoFirstName;
+	}
+	public By getCampoLastName() {
+		return campoLastName;
+	}
+	public By getCampoUserEmail() {
+		return campoUserEmail;
+	}
+	public By getOpcaoGen() {
+		return opcaoGen;
+	}
+	public By getCampoUserNumber() {
+		return campoUserNumber;
+	}
+	public By getCampoDateOfBirthInput() {
+		return campoDateOfBirthInput;
+	}
+	public By getSelecaoMes() {
+		return selecaoMes;
+	}
+	public By getSelecaoAno() {
+		return selecaoAno;
+	}
+	public By getSelecaoDia() {
+		return selecaoDia;
+	}
+	public By getCampoSubjects() {
+		return campoSubjects;
+	}
+	public By getOpcaoSports() {
+		return opcaoSports;
+	}
+	public By getCampoUploadPicture() {
+		return campoUploadPicture;
+	}
+	public By getCampoCurrentAddress() {
+		return campoCurrentAddress;
+	}
+	public By getSelecaoEstado() {
+		return selecaoEstado;
+	}
+	public By getSelecaoCidade() {
+		return selecaoCidade;
+	}
+	public By getBotaoSubmit() {
+		return botaoSubmit;
+	}
+	public By getBotaoFecharPopup() {
+		return botaoFecharPopup;
+	}
+	public By getCampoAlertFrameWindow() {
+		return campoAlertFrameWindow;
+	}
+	public By getSubmenuBrowserWindow() {
+		return submenuBrowserWindow;
+	}
+	public By getBotaoNewWindow() {
+		return botaoNewWindow;
+	}
+	public By getMensagemThisisasamplepage() {
+		return mensagemThisisasamplepage;
+	}
+	public By getCampoWidget() {
+		return campoWidget;
+	}
+	public By getCampoProgressBar() {
+		return campoProgressBar;
+	}
+	public By getBtStart() {
+		return btStart;
+	}
+	public By getProgressBar() {
+		return ProgressBar;
+	}
+
+}

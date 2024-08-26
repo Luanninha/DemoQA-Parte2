@@ -1,0 +1,136 @@
+package Steps;
+
+import Elementos.Elementos;
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+public class Steps {
+
+    private Metodos m = new Metodos();
+    private Elementos e = new Elementos();
+   
+    // Métodos gerais usados em todas as features
+    @Given("que eu acesse a URL {string}")
+    public void que_eu_acesse_a_url(String url) {
+       m.AbrirNavegador(url);
+    }
+
+    @Given("escolho a opção {string} na página inicial")
+    public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+       m.clicar(null);
+    }
+
+    @When("clico no submenu {string}")
+    public void clico_no_submenu(String submenu) {
+       m.clicar(null);
+    }
+
+    @When("clico no botao {string}")
+    public void clico_no_botao(String botao) {
+    	m.clicar(null);        
+    }
+
+    // Criar Registro
+    @When("crio um novo registro")
+    public void crio_um_novo_registro() {
+        m.clicar(e.getNovoRegistroAdd());
+        m.preencher(e.getCampoFirstName(), "");
+        m.preencher(e.getCampoLastName(), null);
+        m.preencher(e.getCampoUserEmail(), null);
+        m.preencher(e.getAge(), null);
+        m.preencher(e.getSalary(), null);
+        m.preencher(e.getDepartment(), null);
+        m.clicar(e.getSubmitRegistro());
+         
+    }
+
+    @When("edito o novo registro criado")
+    public void edito_o_novo_registro_criado() {
+        
+    }
+
+    @When("crio um novo registro com nome {string}, idade {string}, e email {string}")
+    public void crio_um_novo_registro_com_nome_idade_e_email(String nome, String idade, String email) {
+        
+    }
+
+    @Then("verifico que o registro foi atualizado corretamente")
+    public void verifico_que_o_registro_foi_atualizado_corretamente() {
+        
+    }
+
+    @Then("verifico que o registro foi criado corretamente")
+    public void verifico_que_o_registro_foi_criado_corretamente() {
+        
+    }
+
+    //Elementos Ordem Crescente
+    @Then("utilizo métodos de drag and drop para colocar os elementos na ordem crescente")
+    public void utilizo_metodos_de_drag_and_drop_para_colocar_os_elementos_na_ordem_crescente() {
+        
+    }
+
+    //Formulário
+    @When("preencho todo o formulário com valores aleatórios")
+    public void preencho_todo_o_formulario_com_valores_aleatorios() {
+    	m.clicar(e.getOpcaoForms());
+    	m.clicar(e.getSubmenuPracticeForm());
+    	m.preencher(e.getCampoFirstName(), null);
+    	m.preencher(e.getCampoLastName(), null);
+    	m.preencher(e.getCampoUserEmail(), null);
+    	m.clicar(e.getOpcaoGen());
+    	m.preencher(e.getCampoUserNumber(), null);
+    	m.selecionar(e.getCampoDateOfBirthInput(), null);
+    	m.selecionar(e.getSelecaoDia(), null);
+    	m.selecionar(e.getSelecaoMes(), null);
+    	m.selecionar(e.getSelecaoAno(), null);
+    	m.preencher(e.getCampoSubjects(), null);
+    	m.selecionar(e.getOpcaoSports(), null);
+    	m.preencher(e.getCampoUploadPicture(), null);
+    	m.preencher(e.getCampoCurrentAddress(), null);
+    	m.selecionar(e.getSelecaoEstado(), null); 	
+    	m.selecionar(e.getSelecaoCidade(), null);  
+    	    }
+
+    @Then("submeto o formulário")
+    public void submeto_o_formulario() {
+    	m.clicar(e.getBotaoSubmit());
+    }
+
+    @Then("garanto que um popup foi aberto após o submit e fecho o popup")
+    public void garanto_que_um_popup_foi_aberto_apos_o_submit_e_fecho_o_popup() {
+    	m.fecharNavegador();
+    }
+    
+    //Validar Mensagem
+    @When("verifico que uma nova janela foi aberta e valido a mensagem {string}")
+    public void verifico_que_uma_nova_janela_foi_aberta_e_valido_a_mensagem(String mensagem) {
+    	m.clicar(e.getBotaoNewWindow());
+    	m.validarTexto(e.getMensagemThisisasamplepage(), "This is a sample page");
+       }
+
+    @Then("fecho a nova janela aberta")
+    public void fecho_a_nova_janela_aberta() {
+        m.fecharNavegador();
+    }
+
+     //Validar Progress
+    @When("clico no botão {string} e paro antes dos {int}%")
+    public void clico_no_botao_e_paro_antes_dos(String botao, Integer percentual) {
+    	m.clicar(e.getBtStart());	
+    	}
+    
+    @When("valido que o valor da progress bar é menor ou igual a {int}%")
+    public void valido_que_o_valor_da_progress_bar_e_menor_ou_igual_a(Integer percentual) {
+       m.validarTexto(e.getCampoProgressBar(), null);
+    }
+    
+    @Then("clico no botão {string} novamente e ao chegar aos {int}% reseto a progress bar")
+    public void clico_no_botao_novamente_e_ao_chegar_aos_reseto_a_progress_bar(String botao, Integer percentual) {
+      m.clicar(e.getBtStart());
+    }
+
+}

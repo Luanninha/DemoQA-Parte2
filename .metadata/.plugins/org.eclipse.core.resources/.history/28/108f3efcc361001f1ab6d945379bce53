@@ -1,0 +1,13 @@
+package Steps;
+
+import Elementos.Elementos;
+import Metodos.Metodos;
+
+public class StepsCriarRegistro {
+
+	 private Metodos m = new Metodos();
+	 private Elementos e = new Elementos();
+	    
+	   
+	
+}

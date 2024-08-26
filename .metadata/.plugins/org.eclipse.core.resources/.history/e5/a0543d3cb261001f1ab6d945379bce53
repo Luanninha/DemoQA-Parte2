@@ -1,0 +1,125 @@
+package Steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class Steps {
+
+    // Métodos gerais usados em todas as features
+
+    @Given("que eu acesse a URL {string}")
+    public void que_eu_acesse_a_url(String url) {
+        // Implementar código aqui
+    }
+
+    @Given("escolho a opção {string} na página inicial")
+    public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+        // Implementar código aqui
+    }
+
+    @When("clico no submenu {string}")
+    public void clico_no_submenu(String submenu) {
+        // Implementar código aqui
+    }
+
+    @When("clico no botão {string}")
+    public void clico_no_botao(String botao) {
+        // Código para clicar no botão
+    }
+
+    // Navegação e Interação
+    @Given("que eu acesse a URL {string}")
+    public void que_eu_acesse_a_url(String url) {
+        // Implementar código aqui
+    }
+
+    @Given("escolho a opção {string} na página inicial")
+    public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+        // Implementar código aqui
+    }
+
+    @When("clico no submenu {string}")
+    public void clico_no_submenu(String submenu) {
+        // Implementar código aqui
+    }
+
+    // Criação e Edição de Registro
+    @When("crio um novo registro")
+    public void crio_um_novo_registro() {
+        // Código para criar um novo registro
+    }
+
+    @When("edito o novo registro criado")
+    public void edito_o_novo_registro_criado() {
+        // Código para editar o novo registro criado
+    }
+
+    @When("crio um novo registro com nome {string}, idade {string}, e email {string}")
+    public void crio_um_novo_registro_com_nome_idade_e_email(String nome, String idade, String email) {
+        // Código para criar um novo registro com dados específicos
+    }
+
+    @Then("verifico que o registro foi atualizado corretamente")
+    public void verifico_que_o_registro_foi_atualizado_corretamente() {
+        // Código para verificar se o registro foi atualizado corretamente
+    }
+
+    @Then("verifico que o registro foi criado corretamente")
+    public void verifico_que_o_registro_foi_criado_corretamente() {
+        // Código para verificar se o registro foi criado corretamente
+    }
+
+    // Ordenação e Progressão
+    @Then("utilizo métodos de drag and drop para colocar os elementos na ordem crescente")
+    public void utilizo_metodos_de_drag_and_drop_para_colocar_os_elementos_na_ordem_crescente() {
+        // Código para ordenar elementos utilizando drag and drop
+    }
+
+    @When("clico no botão {string} e paro antes dos {int}%")
+    public void clico_no_botao_e_paro_antes_dos(String botao, Integer percentual) {
+        // Código para clicar no botão e parar antes de um determinado percentual
+    }
+
+    @When("valido que o valor da progress bar é menor ou igual a {int}%")
+    public void valido_que_o_valor_da_progress_bar_e_menor_ou_igual_a(Integer percentual) {
+        // Código para validar o valor da progress bar
+    }
+
+    @Then("clico no botão {string} novamente e ao chegar aos {int}% reseto a progress bar")
+    public void clico_no_botao_novamente_e_ao_chegar_aos_reseto_a_progress_bar(String botao, Integer percentual) {
+        // Código para clicar no botão novamente e resetar a progress bar
+    }
+
+    // Popups e Novas Janelas
+    @When("clico no botão {string}")
+    public void clico_no_botao(String botao) {
+        // Código para clicar no botão
+    }
+
+    @When("verifico que uma nova janela foi aberta e valido a mensagem {string}")
+    public void verifico_que_uma_nova_janela_foi_aberta_e_valido_a_mensagem(String mensagem) {
+        // Código para verificar nova janela e validar mensagem
+    }
+
+    @Then("fecho a nova janela aberta")
+    public void fecho_a_nova_janela_aberta() {
+        // Código para fechar a nova janela
+    }
+
+    // Formulário
+    @When("preencho todo o formulário com valores aleatórios")
+    public void preencho_todo_o_formulario_com_valores_aleatorios() {
+        // Código para preencher o formulário com valores aleatórios
+    }
+
+    @Then("submeto o formulário")
+    public void submeto_o_formulario() {
+        // Código para submeter o formulário
+    }
+
+    @Then("garanto que um popup foi aberto após o submit e fecho o popup")
+    public void garanto_que_um_popup_foi_aberto_apos_o_submit_e_fecho_o_popup() {
+        // Código para garantir que o popup foi aberto após o submit e fechá-lo
+    }
+}

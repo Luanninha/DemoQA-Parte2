@@ -1,0 +1,55 @@
+package Elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosCriarRegistro {
+
+	
+		private By campoElements = By
+				.cssSelector("#app > div > div > div.home-body > div > div:nth-child(1)");
+		private By submenuWebTables = By.cssSelector("#item-3 > span");
+		private By novoRegistroAdd = By.id("addNewRecordButton");
+		private By FirstName = By.id("firstName");
+		private By LastName = By.id("lastName");
+		private By Email = By.id("userEmail");
+		private By Age = By.id("age");	
+		private By salary = By.id("salary");
+		private By department = By.id("department");
+		private By submitRegistro = By.cssSelector("#submit");
+		private By btEdit = By.cssSelector("#edit-record-4 > svg > path");
+		
+		public By getCampoElements() {
+			return campoElements;
+		}
+		public By getSubmenuWebTables() {
+			return submenuWebTables;
+		}
+		public By getNovoRegistroAdd() {
+			return novoRegistroAdd;
+		}
+		public By getFirstName() {
+			return FirstName;
+		}
+		public By getLastName() {
+			return LastName;
+		}
+		public By getEmail() {
+			return Email;
+		}
+		public By getAge() {
+			return Age;
+		}
+		public By getSalary() {
+			return salary;
+		}
+		public By getDepartment() {
+			return department;
+		}
+		public By getSubmitRegistro() {
+			return submitRegistro;
+		}
+		public By getBtEdit() {
+			return btEdit;
+		}
+	
+}

@@ -1,0 +1,48 @@
+@tag
+Feature: Criar Registro
+
+  @tag1
+  Scenario: Criar e editar um registro na tabela
+    Given que eu acesso o site
+    And escolho a opção "Elements" na página inicial
+    When clico no submenu "Web Tables"
+    And crio um novo registro
+    And edito o novo registro criado
+    Then verifico que o registro foi atualizado corretamente
+
+  @tag2
+  Scenario Outline: Criar múltiplos registros na tabela
+    Given que eu acesso o site
+    And escolho a opção "Elements" na página inicial
+    When clico no submenu "Web Tables"
+    And crio um novo registro com nome "<name>", idade "<age>", e email "<email>"
+    Then verifico que o registro foi criado corretamente
+
+    Examples:
+      | name     | age | email               |
+      | João     | 25  | joao@example.com    |
+      | Maria    | 30  | maria@example.com   |
+      | José     | 22  | jose@example.com    |
+      | Ana      | 28  | ana@example.com     |
+      | Carlos   | 35  | carlos@example.com  |
+      | Luiza    | 27  | luiza@example.com   |
+      | Marcos   | 40  | marcos@example.com  |
+      | Fernanda | 26  | fernanda@example.com|
+      | Paulo    | 33  | paulo@example.com   |
+      | Clara    | 21  | clara@example.com   |
+      | Ricardo  | 29  | ricardo@example.com |
+      | Bia      | 24  | bia@example.com     |
+
+  
+
+
+
+
+
+
+
+
+bônus (pontos adicionasi na valiaçai)
+
+
+      

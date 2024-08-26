@@ -1,0 +1,42 @@
+package Steps;
+
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsCriarRegistro {
+
+	 
+	private Metodos m = new Metodos();
+
+@Given("que eu acesse a URL {string}")
+public void que_eu_acesse_a_url(String string) {
+    m.AbrirNavegador(string);
+}
+
+@Given("escolho a opção {string} na página inicial")
+public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+    // Supondo que a opção é uma string e você tem um método de clicar a opção
+    m.clicar(e.getCampo(opcao));
+}
+
+@When("clico no submenu {string}")
+public void clico_no_submenu(String submenu) {
+    // Supondo que o submenu é uma string e você tem um método para clicar o submenu
+    m.clicar(e.getSubmenu(submenu));
+}
+
+@Then("utilizo métodos de drag and drop para colocar os elementos na ordem crescente")
+public void utilizo_metodos_de_drag_and_drop_para_colocar_os_elementos_na_ordem_crescente() {
+    m.dragAndDropParaOrdemCrescente();
+}
+
+@Then("fecho o navegador")
+public void fecho_o_navegador() {
+    m.fecharNavegador();
+}
+}
+Implementação dos Métodos
+	
+}

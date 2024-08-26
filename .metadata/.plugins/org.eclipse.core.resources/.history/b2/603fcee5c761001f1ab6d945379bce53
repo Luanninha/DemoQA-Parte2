@@ -1,0 +1,30 @@
+package Elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosOrdemCrescente {
+
+	// ElementosOrdemCrescente
+		private By campoInteractions = By.cssSelector(
+				"#app > div > div > div > div:nth-child(1) > div > div > div:nth-child(5) > span > div > div.header-text");
+		private By submenuSortable = By.cssSelector("#item-0 > span");
+		private By list = By.id("demo-tab-list");
+		private By grid = By.cssSelector("#demo-tab-grid");
+		private By metodosordemcrescente = By.cssSelector(null);
+		
+		public By getCampoInteractions() {
+			return campoInteractions;
+		}
+		public By getSubmenuSortable() {
+			return submenuSortable;
+		}
+		public By getList() {
+			return list;
+		}
+		public By getGrid() {
+			return grid;
+		}
+		public By getMetodosordemcrescente() {
+			return metodosordemcrescente;
+		}
+}

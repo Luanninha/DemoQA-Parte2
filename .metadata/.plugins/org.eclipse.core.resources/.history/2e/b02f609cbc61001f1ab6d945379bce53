@@ -1,0 +1,163 @@
+package Elementos;
+
+import org.openqa.selenium.By;
+
+public class Elementos {
+
+	//Criar registro
+	private By campoElements = By.cssSelector(null);
+	 private By submenuWebTables = By.cssSelector(null);
+	 private By novoRegistroNome = By.cssSelector(null);
+	 private By novoRegistroAge = By.cssSelector(null);
+	 private By novoRegistroEmail = By.cssSelector(null);
+	 private By registroAtualizado = By.cssSelector(null);
+
+	//ElementosOrdemCrescente
+	 private By campoInteractions = By.cssSelector(null);
+	 private By submenuSortable = By.cssSelector(null);
+	 private By metodosordemcrescente = By.cssSelector(null);
+       
+    // Formulário de Cadastro
+    private By opcaoForms = By.cssSelector(":nth-child(2) > :nth-child(1) > .card-body");
+    private By submenuPracticeForm = By.cssSelector(":nth-child(2) > .element-list > .menu-list > #item-0");
+    private By campoFirstName = By.id("firstName");
+    private By campoLastName = By.id("lastName");
+    private By campoUserEmail = By.id("userEmail");
+    private By opcaoGen = By.cssSelector("#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label");
+    private By campoUserNumber = By.id("userNumber");
+    private By campoDateOfBirthInput = By.id("dateOfBirthInput");
+    private By selecaoMes = By.cssSelector(".react-datepicker__month-select");
+    private By selecaoAno = By.cssSelector(".react-datepicker__year-select");
+    private By selecaoDia = By.cssSelector(".react-datepicker__day--001");
+    private By campoSubjects = By.cssSelector(".subjects-auto-complete__value-container");
+    private By opcaoSports = By.cssSelector(".custom-control-label");
+    private By campoUploadPicture = By.id("uploadPicture");
+    private By campoCurrentAddress = By.id("currentAddress");
+    private By selecaoEstado = By.id("state");
+    private By selecaoCidade = By.id("city");
+    private By botaoSubmit = By.id("submit");
+    private By botaoFecharPopup = By.id("closeLargeModal");
+      
+//Validar mensagem 
+private By campoAlertFrameWindow = By.cssSelector("#app > div > div > div.home-body > div > div:nth-child(3) > div > div.card-body > h5");
+private By submenuBrowserWindow = By.cssSelector(null);
+private By botaoNewWindow = By.cssSelector(null);
+private By mensagemThisisasamplepage = By.cssSelector(null);
+
+//Validar progress
+private By campoWidget = By.cssSelector("#app > div > div > div.home-body > div > div:nth-child(4) > div > div.avatar.mx-auto.white > svg > path");
+private By campoProgressBar = By.cssSelector("#item-4 > span");
+private By btStart = By.cssSelector("#startStopButton");
+private By ProgressBar = By.id("progressBar");
+public By getCampoElements() {
+	return campoElements;
+}
+public By getSubmenuWebTables() {
+	return submenuWebTables;
+}
+public By getNovoRegistroNome() {
+	return novoRegistroNome;
+}
+public By getNovoRegistroAge() {
+	return novoRegistroAge;
+}
+public By getNovoRegistroEmail() {
+	return novoRegistroEmail;
+}
+public By getRegistroAtualizado() {
+	return registroAtualizado;
+}
+public By getCampoInteractions() {
+	return campoInteractions;
+}
+public By getSubmenuSortable() {
+	return submenuSortable;
+}
+public By getMetodosordemcrescente() {
+	return metodosordemcrescente;
+}
+public By getOpcaoForms() {
+	return opcaoForms;
+}
+public By getSubmenuPracticeForm() {
+	return submenuPracticeForm;
+}
+public By getCampoFirstName() {
+	return campoFirstName;
+}
+public By getCampoLastName() {
+	return campoLastName;
+}
+public By getCampoUserEmail() {
+	return campoUserEmail;
+}
+public By getOpcaoGen() {
+	return opcaoGen;
+}
+public By getCampoUserNumber() {
+	return campoUserNumber;
+}
+public By getCampoDateOfBirthInput() {
+	return campoDateOfBirthInput;
+}
+public By getSelecaoMes() {
+	return selecaoMes;
+}
+public By getSelecaoAno() {
+	return selecaoAno;
+}
+public By getSelecaoDia() {
+	return selecaoDia;
+}
+public By getCampoSubjects() {
+	return campoSubjects;
+}
+public By getOpcaoSports() {
+	return opcaoSports;
+}
+public By getCampoUploadPicture() {
+	return campoUploadPicture;
+}
+public By getCampoCurrentAddress() {
+	return campoCurrentAddress;
+}
+public By getSelecaoEstado() {
+	return selecaoEstado;
+}
+public By getSelecaoCidade() {
+	return selecaoCidade;
+}
+public By getBotaoSubmit() {
+	return botaoSubmit;
+}
+public By getBotaoFecharPopup() {
+	return botaoFecharPopup;
+}
+public By getCampoAlertFrameWindow() {
+	return campoAlertFrameWindow;
+}
+public By getSubmenuBrowserWindow() {
+	return submenuBrowserWindow;
+}
+public By getBotaoNewWindow() {
+	return botaoNewWindow;
+}
+public By getMensagemThisisasamplepage() {
+	return mensagemThisisasamplepage;
+}
+public By getCampoWidget() {
+	return campoWidget;
+}
+public By getCampoProgressBar() {
+	return campoProgressBar;
+}
+public By getBtStart() {
+	return btStart;
+}
+public By getProgressBar() {
+	return ProgressBar;
+}
+
+
+
+}

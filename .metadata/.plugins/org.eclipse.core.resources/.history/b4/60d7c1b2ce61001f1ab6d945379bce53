@@ -1,0 +1,44 @@
+package Steps;
+
+import Elementos.ElementoValidarProgress;
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsValidarProgress {
+
+	private Metodos m = new Metodos();
+	private ElementoValidarProgress e = new ElementoValidarProgress();
+
+	@Given("que eu acesse a URL {string}")
+	public void que_eu_acesse_a_url(String url) {
+		m.AbrirNavegador(url);
+	}
+
+	@Given("escolho a opção {string} na página inicial")
+	public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+		m.clicar(e.getCampoWidget());
+	}
+
+	@When("clico no submenu {string}")
+	public void clico_no_submenu(String submenu) {
+		m.clicar(e.getCampoProgressBar());
+	}
+
+	@When("clico no botão {string} e paro antes dos {int}%")
+	public void clico_no_botao_e_paro_antes_dos(String botao, Integer percentual) {
+		 m.clicar(e.getBtStart());
+	        // Adicione lógica para esperar ou verificar o progresso, se necessário.
+	}
+
+	@When("valido que o valor da progress bar é menor ou igual a {int}%")
+	public void valido_que_o_valor_da_progress_bar_e_menor_ou_igual_a(Integer percentual) {
+		m.validarTexto(e.getCampoProgressBar(), null);
+	}
+
+	@Then("clico no botão {string} novamente e ao chegar aos {int}% reseto a progress bar")
+	public void clico_no_botao_novamente_e_ao_chegar_aos_reseto_a_progress_bar(String botao, Integer percentual) {
+		m.clicar(e.getBtStart());
+	}
+}

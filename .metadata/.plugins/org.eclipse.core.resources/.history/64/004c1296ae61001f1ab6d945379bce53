@@ -1,0 +1,14 @@
+
+@tag
+Feature: Formulario
+
+  @tag1
+  Scenario: Preenche e submete o formulário
+    Given que acesse a url https://demoqa.com/
+    And escolher a opção forms
+    When clicar no submenu practice form
+    And preencher todo o formulário com valores aleatórios
+    Then submeter o formulário
+    And garantir que um popup foi aberto após o submit e fechar o popup
+ 
+

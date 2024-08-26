@@ -1,0 +1,63 @@
+package Steps;
+
+import Elementos.Elementos;
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsCriarRegistro {
+
+	 
+	    
+
+@Given("que eu acesse a URL {string}")
+public void que_eu_acesse_a_url(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("escolho a opção {string} na página inicial")
+public void escolho_a_opção_na_página_inicial(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("clico no submenu {string}")
+public void clico_no_submenu(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("crio um novo registro")
+public void crio_um_novo_registro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("edito o novo registro criado")
+public void edito_o_novo_registro_criado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("verifico que o registro foi atualizado corretamente")
+public void verifico_que_o_registro_foi_atualizado_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("crio um novo registro com nome {string}, idade {string}, e email {string}")
+public void crio_um_novo_registro_com_nome_idade_e_email(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("verifico que o registro foi criado corretamente")
+public void verifico_que_o_registro_foi_criado_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	
+}

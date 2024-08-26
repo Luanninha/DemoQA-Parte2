@@ -1,0 +1,19 @@
+
+@tag
+Feature: Colocar Elementos em ordem Crescente
+
+  @tag1
+  Scenario: Title of your scenario
+    Given acessar o site 
+    And escolher a opção interactions na pasina inicial
+    When clicar no submenu Sortable
+    Then utilizando métodos de drag and drop colocar os elementos na ordem crescente
+    And fechar navegador
+
+
+
+
+
+
+
+    

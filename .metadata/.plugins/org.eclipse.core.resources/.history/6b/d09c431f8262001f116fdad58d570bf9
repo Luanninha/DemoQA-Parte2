@@ -1,0 +1,25 @@
+package Elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosValidarMensagem {
+	
+		private By campoAlertFrameWindow = By.cssSelector(".top-card , h5");
+		private By submenuBrowserWindow = By.cssSelector("#item-0 > span");
+		private By botaoNewWindow = By.id("windowButton");
+		private By mensagemThisisasamplepage = By.id("sampleHeading");
+		
+		public By getCampoAlertFrameWindow() {
+			return campoAlertFrameWindow;
+		}
+		public By getSubmenuBrowserWindow() {
+			return submenuBrowserWindow;
+		}
+		public By getBotaoNewWindow() {
+			return botaoNewWindow;
+		}
+		public By getMensagemThisisasamplepage() {
+			return mensagemThisisasamplepage;
+		}
+
+}

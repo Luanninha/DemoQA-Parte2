@@ -1,0 +1,23 @@
+
+@tag
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Title of your scenario
+    Given acessar o site https://demoqa.com/
+    And escolher a opção alerts, frame e windowws na pagina inicial
+    When clicar no submenu browser wuindowns
+    And clicar no botão new Windows
+    And certifica se que uma nova janela foi aberta, e validar a msg "this is a sample page
+    Then fecgar a nova janela aberta
+  
+
+ 
+
+
+
+
+
+
+

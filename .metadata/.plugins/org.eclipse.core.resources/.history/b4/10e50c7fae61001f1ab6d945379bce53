@@ -1,0 +1,28 @@
+@tag
+Feature: Validar o Progress
+
+  @tag1
+  Scenario: Manipular barra de progresso
+    Given que eu acesso o site
+    And escolho a opção "Widgets" na página inicial
+    When clico no submenu "Progress Bar"
+    And clico no botão "Start" e paro antes dos 25%
+    And valido que o valor da progress bar é menor ou igual a 25%
+    Then aperto "Start" novamente e, ao chegar aos 100%, reseto a progress bar
+    And fecho o navegador
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

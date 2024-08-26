@@ -1,0 +1,45 @@
+package Steps;
+
+import Elementos.Elementos;
+import Metodos.Metodos;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsValidarMensagem {
+
+	private Metodos m = new Metodos();
+	private Elementos e = new Elementos();
+
+	@Given("que eu acesse a URL {string}")
+	public void que_eu_acesse_a_url(String url) {
+		m.AbrirNavegador(url);
+	}
+
+	@Given("escolho a opção {string} na página inicial")
+	public void escolho_a_opcao_na_pagina_inicial(String opcao) {
+		
+	}
+
+	@When("clico no submenu {string}")
+	public void clico_no_submenu(String submenu) {
+		
+	}
+
+	@When("clico no botao {string}")
+	public void clico_no_botao(String botao) {
+		m.clicar(botao);
+	}
+
+	@When("verifico que uma nova janela foi aberta e valido a mensagem {string}")
+	public void verifico_que_uma_nova_janela_foi_aberta_e_valido_a_mensagem(String mensagem) {
+		m.clicar(e.getBotaoNewWindow());
+		m.validarTexto(e.getMensagemThisisasamplepage(), "This is a sample page");
+	}
+
+	@Then("fecho a nova janela aberta")
+	public void fecho_a_nova_janela_aberta() {
+		m.fecharNavegador();
+	}
+
+}
